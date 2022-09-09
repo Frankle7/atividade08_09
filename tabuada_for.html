@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>tabuada fkh</title>
+ </head>
+ <body>
+
+    <script>
+
+    function tabuada(){
+    var num = parseInt(document.getElementById("num").value);
+    var resposta = document.getElementById('resposta');
+    var tabuada='';
+
+     for(var count=1; count<=10 ; count++)
+    tabuada += num+" x "+count+" = "+
+               num*count+"<br />";
+  
+    resposta.innerHTML = tabuada;
+}
+    </script>
+
+    
+    Tabuada : <input id="num" type="int"> <br />
+    <button onclick="tabuada()">Exibir</button><br />
+    Resultado: <br />
+    <div id='result' ></div>
+ </body>
+</html>
